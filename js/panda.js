@@ -1,4 +1,5 @@
 //task 2
+// যতগুলা ইলিমেন্টে h2 ট্যাগ আছে সেগুলাকে সিলেক্ট করে তার লেখাগুলার কালার lightblue করেদিতে পারো কিনা। 
 
 const h2Tags = document.getElementsByTagName('h2')
 for (const h2 of h2Tags) {
@@ -9,6 +10,7 @@ for (const h2 of h2Tags) {
 
 
 //task 3
+// ওই ওয়েবসাইট এ backpack আইডি দিয়ে একটা সেকশন আছে। সেই সেকশনের ব্যাকগ্রাউন্ড কালার tomato করে দিতে পারো কিনা। 
 
 // const bagpackSection = document.getElementById('bagpack')
 // for (const bagpack of bagpackSection){
@@ -18,17 +20,23 @@ for (const h2 of h2Tags) {
 document.getElementById('bagpack').style.backgroundColor = 'tomato';
 
 //task 4
+//card ক্লাস যতগুলা জায়গায় ইউজ করা হয়েছে সবগুলা কার্ড এর বর্ডার রেডিয়াস ৩০px করে দিতে পারো কিনা 
+
 const cards = document.getElementsByClassName('card');
 for (const card of cards){
     card.style.borderRadius = '30px';
 }
 
 //task 5
+//কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
+
 function cnsole(){
     console.log('hi from js');
 }
 
 //task 6
+//এইবার নতুন করে সবগুলা buy now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা buy now বাটনে চাপ দিলে সেটা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো। 
+
 const buyButton = document.getElementsByClassName('panda-btn-buy-now')
 for (const btn of buyButton){
     btn.addEventListener('click', function(event){
@@ -37,6 +45,8 @@ for (const btn of buyButton){
 }
 
 //task 7
+//একদম নিচে একটা LET'S STAY IN TOUCH নামে একটা জিনিস আছে। সেখানে তুমি submit বাটনটা disable করে ফেলবে। তারপর কেউ যদি উপরে input ফিল্ডে যদি একজাক্টলি email শব্দটা লিখে। তাহলে বাটন একটিভ হবে। আর যদি অন্য কিছু লিখে তাহলে বাটনটা একটিভ হবে না। 
+
 document.getElementById('exampleInputEmail1').addEventListener('keyup', function(event){
     const text =  event.target.value;
     const btnSubmit = document.getElementById('btn-submit')
@@ -49,6 +59,8 @@ document.getElementById('exampleInputEmail1').addEventListener('keyup', function
 })
 
 //task 8
+// (অপশনাল) একটা মজার চ্যালেঞ্জ। কোন একটা ইমেজ এর উপরে mouseenter করলে সেই ইমেজটা চেইঞ্জ হয়ে যাবে। একটু গুগলে সার্চ দিয়ে দেখো। জিনিসটা কিভাবে করা যেতে পারে। 
+
 //shoes section
 const shoe1 = document.getElementById('shoe-img-1')
 shoe1.addEventListener('mouseenter', function(){
@@ -99,6 +111,8 @@ bag3.addEventListener('mouseleave', function(){
 })
 
 //task 9
+//(অপশনাল) নিচের যে LET'S STAY IN TOUCH আছে সেখানে কোন খালি জায়গায় ডাবল ক্লিক করলে ঐটার পিছনের কালার চেইঞ্জ হয়ে যাবে। 
+
 const subscribe = document.getElementById('subscribe');
 subscribe.addEventListener('dblclick', function(){
     subscribe.style.backgroundColor = 'lightgray';
